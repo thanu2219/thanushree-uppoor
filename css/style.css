@@ -1533,14 +1533,21 @@ section#skills.section {
   color: var(--text-soft);
 }
 
-.decision-callout-list {
+/* Must beat `.case-prose ul` (dark text) — lists inside dark callout need light copy */
+.case-prose .decision-callout ul.decision-callout-list {
   margin: var(--space-sm) 0 0;
   padding-left: 1.15rem;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(248, 250, 252, 0.95);
 }
 
-.decision-callout-list li {
+.case-prose .decision-callout ul.decision-callout-list li {
   margin-bottom: 0.35rem;
+  color: rgba(248, 250, 252, 0.95);
+}
+
+.case-prose .decision-callout ul.decision-callout-list strong {
+  color: #ffffff;
+  font-weight: 700;
 }
 
 .pull {
@@ -1861,7 +1868,7 @@ section#skills.section {
   padding-top: var(--space-md);
   border-top: 1px solid rgba(255, 255, 255, 0.12);
   font-size: 0.92rem;
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(248, 250, 252, 0.88);
 }
 
 .collab-list {
